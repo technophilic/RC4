@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RC4</title>
+</head>
+<body>
+    <div>
+        <p>
+            <input name="algo" id="rc4" value="arc4" type="radio" >
+            <label for="rc4">RC4</label>
+        </p>
+        <p>
+            <input name="algo" id="rc4a" value="rc4a" type="radio" >
+            <label for="rc4a">RC4A</label>
+        </p>
+        <p>
+            <input name="algo" id="vmpc" value="vmpc" type="radio" >
+            <label for="vmpc">VMPC</label>
+        </p>
+        <p>
+            <input name="algo" id="rc4+" value="rc4+" type="radio" >
+            <label for="rc4+">RC4+</label>
+        </p>
+    </div>
+    <div>
+        <h3>Encrypt :</h3>
+        <div>
+            <label for="input">Input String : </label>
+            <input id="input" type="text">
+        </div>
+        <div>
+            <label for="output">Output String : </label>
+            <p id="output"> </p>
+        </div>
+        <div>
+            <button id="encrypt">Encrypt</button>
+        </div>
+    </div>
+    <div>
+        <h3>Decrypt :</h3>
+        <div>
+            <label for="dec_in">Input string :</label>
+            <input type="text" id="dec_in">
+        </div>
+        <div>
+            <p id="dec_out"> </p>
+        </div>
+        <div>
+            <button id="decrypt">Decrypt</button>
+        </div>
+    </div>
+    <script src="js/bundle.js"></script>
+</body>
+</html>
